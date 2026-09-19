@@ -1,0 +1,209 @@
+{
+  "strategy": "heading_based",
+  "chunk_size": 1000,
+  "embedding_backend": ".models/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_warning": null,
+  "semantic_similarity_valid": true,
+  "document_count": 8,
+  "chunk_count": 30,
+  "chunks_per_document": {
+    "digital-resource-faq": 4,
+    "document-renewal": 3,
+    "group-study-room": 4,
+    "information-on-demand": 4,
+    "library-account": 5,
+    "service-hours": 3,
+    "student-reference-book-borrowing": 3,
+    "student-textbook-borrowing": 4
+  },
+  "total_score": 9,
+  "max_score": 10,
+  "benchmarks": [
+    {
+      "query": "Với giáo trình tại phòng 111, được mượn tối đa bao nhiêu cuốn, trong bao lâu và được gia hạn thế nào?",
+      "gold_doc_id": "student-textbook-borrowing",
+      "answer_marker": "tối đa 8 cuốn",
+      "metadata_filter": {
+        "audience": "student"
+      },
+      "score": 1,
+      "gold_rank": 2,
+      "answer_rank": 2,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.6625267596431867,
+          "doc_id": "student-reference-book-borrowing",
+          "chunk_index": 1,
+          "content": "# Hướng dẫn mượn sách tham khảo phòng 102\n\n- Số lượng: tối đa 5 cuốn \n\n - Thời hạn: 1- 30 ngày, được gia hạn 1 lần trong thời gian 7 ngày \n\n3. HƯỚNG DẪN\n\n a/ Tra cứu - mượn tài liệu:\n\n  Bước 1: Tra cứu tại địa chỉ: http://libopac.hust.edu.vn/\n\n  Bước 2: Sử dụng thẻ sinh viên hoặc app iCTSV để checkin trước khi vào kho sách.\n\n  Bước 3: Vào giá sách tự chọn sách theo ký hiệu xếp giá (xem thêm bảng chỉ dẫn ở mỗi giá sách).\n\n  Bước 4: Mượn tài liệu qua cán bộ phục vụ\n\n  Bước 5: Kiểm tra tài khoản trước khi ra về.\n\n b/ Trả tài liệu:\n\n  Bước 1: Sử dụng thẻ sinh viên hoặc app iCTSV để checkin trước khi trả tài liệu.\n\n  Bước 2: Trả tài liệu qua cán bộ phục vụ\n\n  Bước 3: Kiểm tra tài khoản trước khi ra về.\n\n \n\nNgôn ngữ \nTiếng Việt\n\nTóm tắt HDSD: \n\nPhòng 102, nằm ở phía trái, mặt trước Tòa nhà Thư viện Tạ Quang Bửu\n\nTrung tâm Truyền thông và Tri thức số - Đại học Bách khoa Hà Nội \n\n \n\nSố 1 Đại Cồ Việt, phường Bạch Mai, Thành phố Hà Nội\n\nĐiện thoại: (84-24) 3869 2243, Email: tvtqb@hust.edu.vn"
+        },
+        {
+          "rank": 2,
+          "score": 0.6407736591808288,
+          "doc_id": "student-textbook-borrowing",
+          "chunk_index": 0,
+          "content": "# Quy trình mượn trả giáo trình phòng 111\n\nQuy trình mượn trả sách tại Phòng 111 | Thư viện\n\n×\nVideo hướng dẫn sử dụng thư viện: https://library.hust.edu.vn/node/254\n\nModule đếm lượt\n\nTài nguyên số \n\nĐại học Bách Khoa Hà Nội\n\nTừ KhóaNhan đềTác giảChủ đềKý hiệu xếp giáISBN/ISSNNgười hướng dẫnTên khóa họcKeywordAuthorJournal/Book TitleVolumeIssuePageTitleSeries TitleAuthorPublisherISBNBISAC CodeBISAC Subject HeadingLC Subject HeadingLC Call NumberDewey Decimal NumberEbook Central SubjectTất cảNhan đềTác giảNgười hướng dẫnChủ đềNăm xuất bảnAnywhereTitleAuthorKeywordsAbstractAffiliation\n\nSearch Scope\n\nMục lục thư việnThư viện sốProquest Ebook Central (Ebrary)SAGEScience Direct\n\n \n\n \n\nQuy trình mượn trả sách tại Phòng 111\n\nVỊ TRÍ\n\nPhòng 111, mặt sau Tòa nhà Thư viện Tạ Quang Bửu (đối diện Giảng đường D9)\n\nCHÍNH SÁCH MƯỢN\n\nMỗi bạn đọc được mượn tối đa 8 cuốn\n\nThời hạn mượn: 90 ngày, được gia hạn 1 lần trong thời gian 30 ngày (Tổng 120 ngày)\n\nTHỜI GIAN MƯỢN"
+        },
+        {
+          "rank": 3,
+          "score": 0.6269765713474756,
+          "doc_id": "student-textbook-borrowing",
+          "chunk_index": 1,
+          "content": "# Quy trình mượn trả giáo trình phòng 111\n\n- Phòng mượn giáo trình phục vụ từ thứ 2 đến thứ 6:\n\nSáng:   08h00 - 11h30\n\nChiều: 13h30 - 17h00\n\n(Sáng Thứ 3 và sáng Thứ 6 hàng tuần không phục vụ mượn trả để làm công tác nghiệp vụ và vệ sinh kho sách).\n\nQUY TRÌNH\n\na/ Mượn tài liệu:\n\nBước 1: Tra cứu tài liệu tại website: http://libopac.hust.edu.vn/ để xác định ký hiệu, vị trí tài liệu cần tìm.\n\nBước 2: Sử dụng thẻ sinh viên hoặc app iCTSV để checkin trước khi vào kho sách.\n\nBước 3: Vào kho sách tự chọn sách theo ký hiệu xếp giá (xem thêm bảng chỉ dẫn đầu mỗi giá sách).\n\nBước 4: Mượn tài liệu qua các cán bộ phục vụ hoặc tự mượn qua máy mượn trả tự động.\n\nBước 5: Ra về qua cổng kiểm soát an ninh.\n\nBước 6: Kiểm tra tài khoản trước khi ra về.\n\nb/ Trả tài liệu:\n\n            Bước 1: Sử dụng thẻ sinh viên hoặc app iCTSV để checkin trước khi trả tài liệu.\n\n            Bước 2: Trả tài liệu qua các cán bộ phục vụ hoặc tự trả qua máy mượn trả tự động."
+        }
+      ],
+      "unfiltered_results": [
+        {
+          "rank": 1,
+          "score": 0.6625267596431867,
+          "doc_id": "student-reference-book-borrowing",
+          "chunk_index": 1
+        },
+        {
+          "rank": 2,
+          "score": 0.6407736591808288,
+          "doc_id": "student-textbook-borrowing",
+          "chunk_index": 0
+        },
+        {
+          "rank": 3,
+          "score": 0.6269765713474756,
+          "doc_id": "student-textbook-borrowing",
+          "chunk_index": 1
+        }
+      ]
+    },
+    {
+      "query": "Chính sách mượn sách tham khảo tại phòng 102 quy định số lượng, thời hạn và gia hạn như thế nào?",
+      "gold_doc_id": "student-reference-book-borrowing",
+      "answer_marker": "tối đa 5 cuốn",
+      "metadata_filter": null,
+      "score": 2,
+      "gold_rank": 1,
+      "answer_rank": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.5995526120484631,
+          "doc_id": "student-reference-book-borrowing",
+          "chunk_index": 1,
+          "content": "# Hướng dẫn mượn sách tham khảo phòng 102\n\n- Số lượng: tối đa 5 cuốn \n\n - Thời hạn: 1- 30 ngày, được gia hạn 1 lần trong thời gian 7 ngày \n\n3. HƯỚNG DẪN\n\n a/ Tra cứu - mượn tài liệu:\n\n  Bước 1: Tra cứu tại địa chỉ: http://libopac.hust.edu.vn/\n\n  Bước 2: Sử dụng thẻ sinh viên hoặc app iCTSV để checkin trước khi vào kho sách.\n\n  Bước 3: Vào giá sách tự chọn sách theo ký hiệu xếp giá (xem thêm bảng chỉ dẫn ở mỗi giá sách).\n\n  Bước 4: Mượn tài liệu qua cán bộ phục vụ\n\n  Bước 5: Kiểm tra tài khoản trước khi ra về.\n\n b/ Trả tài liệu:\n\n  Bước 1: Sử dụng thẻ sinh viên hoặc app iCTSV để checkin trước khi trả tài liệu.\n\n  Bước 2: Trả tài liệu qua cán bộ phục vụ\n\n  Bước 3: Kiểm tra tài khoản trước khi ra về.\n\n \n\nNgôn ngữ \nTiếng Việt\n\nTóm tắt HDSD: \n\nPhòng 102, nằm ở phía trái, mặt trước Tòa nhà Thư viện Tạ Quang Bửu\n\nTrung tâm Truyền thông và Tri thức số - Đại học Bách khoa Hà Nội \n\n \n\nSố 1 Đại Cồ Việt, phường Bạch Mai, Thành phố Hà Nội\n\nĐiện thoại: (84-24) 3869 2243, Email: tvtqb@hust.edu.vn"
+        },
+        {
+          "rank": 2,
+          "score": 0.514953105510174,
+          "doc_id": "document-renewal",
+          "chunk_index": 1,
+          "content": "# Hướng dẫn gia hạn tài liệu\n\n- Để gia hạn một số tài liệu: Chọn các tài liệu cần gia hạn rồi chọn nút \"Gia hạn tài liệu đã chọn\"\n\nTất cả tài liệu sẽ chỉ được gia hạn một lần và bạn đọc lưu ý trả tài liệu theo thời gian đã được gia hạn.\n\n \n\n \n\n \n\n \n\n \n\n \n\nHướng dẫn quản lý tài khoản:  https://library.hust.edu.vn/vi/node/49\n\nMọi thắc mắc về tài khoản bạn đọc xin mời Quý bạn đọc liên hệ theo địa chỉ sau:\n\nĐT: (024) 32215 3287. Email: tvtqb@hust.edu.vn\n\nTrân trọng\n\nTRUNG TÂM TRUYỀN THÔNG VÀ TRI THỨC SỐ \n\n \n\nNgôn ngữ \nTiếng Việt\n\nTrợ giúp\n\nHướng dẫn quản lý tài khoản bạn đọc \n\nCác câu hỏi thường gặp \n\nHướng dẫn tìm kiếm tài liệu qua OPAC \n\nHướng dẫn sử dụng trang Tài nguyên số \n\nLớp hướng dẫn sử dụng Thư viện \n\nTài liệu hướng dẫn sử dụng thư viện \n\nĐề tài nghiên cứu khoa học \n\nHướng dẫn gia hạn tài liệu \n\nTrang\n\n1\n\n2\n\n3\n\nnext ›\n\nlast »\n\nTài nguyên điện tử"
+        },
+        {
+          "rank": 3,
+          "score": 0.5055265669187454,
+          "doc_id": "student-textbook-borrowing",
+          "chunk_index": 1,
+          "content": "# Quy trình mượn trả giáo trình phòng 111\n\n- Phòng mượn giáo trình phục vụ từ thứ 2 đến thứ 6:\n\nSáng:   08h00 - 11h30\n\nChiều: 13h30 - 17h00\n\n(Sáng Thứ 3 và sáng Thứ 6 hàng tuần không phục vụ mượn trả để làm công tác nghiệp vụ và vệ sinh kho sách).\n\nQUY TRÌNH\n\na/ Mượn tài liệu:\n\nBước 1: Tra cứu tài liệu tại website: http://libopac.hust.edu.vn/ để xác định ký hiệu, vị trí tài liệu cần tìm.\n\nBước 2: Sử dụng thẻ sinh viên hoặc app iCTSV để checkin trước khi vào kho sách.\n\nBước 3: Vào kho sách tự chọn sách theo ký hiệu xếp giá (xem thêm bảng chỉ dẫn đầu mỗi giá sách).\n\nBước 4: Mượn tài liệu qua các cán bộ phục vụ hoặc tự mượn qua máy mượn trả tự động.\n\nBước 5: Ra về qua cổng kiểm soát an ninh.\n\nBước 6: Kiểm tra tài khoản trước khi ra về.\n\nb/ Trả tài liệu:\n\n            Bước 1: Sử dụng thẻ sinh viên hoặc app iCTSV để checkin trước khi trả tài liệu.\n\n            Bước 2: Trả tài liệu qua các cán bộ phục vụ hoặc tự trả qua máy mượn trả tự động."
+        }
+      ],
+      "unfiltered_results": []
+    },
+    {
+      "query": "Phòng học nhóm phục vụ vào thời gian nào và quy trình nhận trả chìa khóa ra sao?",
+      "gold_doc_id": "group-study-room",
+      "answer_marker": "Trả lại chìa khóa sau sử dụng và lấy lại thẻ",
+      "metadata_filter": null,
+      "score": 2,
+      "gold_rank": 1,
+      "answer_rank": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.6327197280318794,
+          "doc_id": "group-study-room",
+          "chunk_index": 1,
+          "content": "# Dịch vụ sử dụng phòng học nhóm\n\nTrung tâm Truyền thông và Tri thức số thực hiện cung cấp dịch vụ đăng ký sử dụng dịch vụ phòng học nhóm tại thư viện cho cán bộ, sinh viên ĐHBK Hà Nội như sau:\n\nThời gian sử dụng:\n\nThứ 2 đến thứ 6: từ 8h00 – 21h00\n\nThứ 7 Và CN: từ 8h00 – 16h00\n\nĐối tượng bạn đọc\n\nToàn bộ cán bộ, giảng viên, sinh viên, học viên, Đại học Bách Khoa Hà Nội\n\nQuy trình đăng ký và sử dụng phòng học nhóm:\n\nBước 1: Bạn đọc đăng ký sử dụng bằng cách\n\nTruy cập link form ĐĂNG KÝ SỬ DỤNG PHÒNG HỌC NHÓM \n\nQuét mã QR\n\nĐăng ký trực tiếp tại quầy phục vụ P411.\n\nBước 2: Liên hệ cán bộ P411 nhận chìa khóa (Xuất trình và để lại thẻ SV, CB)\n\nBước 3: Trả lại chìa khóa sau sử dụng và lấy lại thẻ.\n\nBạn đọc thực hiện các quy định sau:\n\nTuân thủ nội quy, quy định thư viện\n\nSử dụng phòng đúng mục đích học tập/trao đổi học thuật.\n\nBảo quản chìa khóa, bàn ghế và trang thiết bị trong phòng\n\nGiữ vệ sinh, trật tự chung; tắt thiết bị điện trước khi rời phòng\n\n--------------------"
+        },
+        {
+          "rank": 2,
+          "score": 0.5278748179010704,
+          "doc_id": "group-study-room",
+          "chunk_index": 2,
+          "content": "# Dịch vụ sử dụng phòng học nhóm\n\nThông tin hỗ trợ:\n\nEmail:  tvtqb@hust.edu.vn\n\nWebsite:   http://library.hust.edu.vn/ \n\nFB: https://www.facebook.com/trungtamTTVTTS\n\nPhone: (84-24) 2215 3287\n\nTin liên quan\n\nSinh viên BKACAD tham quan, trải nghiệm Thư viện Đại học Bách khoa Hà Nội \n\n16/09/2026 \n\nThông báo lịch phục vụ \n\n06/09/2026 \n\nThông báo nghỉ lễ 2-9 \n\n27/08/2026 \n\nTăng gấp ba lần kinh phí cho nguồn tin khoa học \n\n10/08/2026 \n\nTrang\n\n1\n\n2\n\n3\n\n4\n\n…\n\nnext ›\n\nlast »\n\nTIN NỔI BẬT\n\nTh9 \n\n16\n\nThông báo sách mới – Quý 2+3 năm 2026 \n\nTh6 \n\n17\n\nThông báo Chương trình Tọa đàm \"Sách hay dẫn lối thành công\" Số 2 - 2026 \n\nTháng 5 \n\n20\n\nThông báo Chương trình “Bách khoa talks: Từ Book đến Lab” - Số 1 năm 2026 \n\nTháng 5 \n\n18\n\nThông báo về việc Khảo sát ý kiến người dùng nhằm nâng cao chất lượng sản phẩm, dịch vụ thư viện năm 2026 \n\nTháng 5 \n\n13\n\nDịch vụ mượn, trả tài liệu in-house \n\nTrung tâm Truyền thông và Tri thức số - Đại học Bách khoa Hà Nội"
+        },
+        {
+          "rank": 3,
+          "score": 0.5267828305308966,
+          "doc_id": "group-study-room",
+          "chunk_index": 0,
+          "content": "# Dịch vụ sử dụng phòng học nhóm\n\nThông báo triển khai Dịch vụ sử dụng phòng học nhóm | Thư viện\n\n×\nVideo hướng dẫn sử dụng thư viện: https://library.hust.edu.vn/node/254\n\nModule đếm lượt\n\nTài nguyên số \n\nĐại học Bách Khoa Hà Nội\n\nTừ KhóaNhan đềTác giảChủ đềKý hiệu xếp giáISBN/ISSNNgười hướng dẫnTên khóa họcKeywordAuthorJournal/Book TitleVolumeIssuePageTitleSeries TitleAuthorPublisherISBNBISAC CodeBISAC Subject HeadingLC Subject HeadingLC Call NumberDewey Decimal NumberEbook Central SubjectTất cảNhan đềTác giảNgười hướng dẫnChủ đềNăm xuất bảnAnywhereTitleAuthorKeywordsAbstractAffiliation\n\nSearch Scope\n\nMục lục thư việnThư viện sốProquest Ebook Central (Ebrary)SAGEScience Direct\n\n \n\n \n\nThông báo triển khai Dịch vụ sử dụng phòng học nhóm\n\nTrung tâm Truyền thông và Tri thức số thực hiện cung cấp dịch vụ đăng ký sử dụng dịch vụ phòng học nhóm tại thư viện cho cán bộ, sinh viên ĐHBK Hà Nội"
+        }
+      ],
+      "unfiltered_results": []
+    },
+    {
+      "query": "Khi quên mật khẩu tài khoản thư viện, bạn đọc cần thực hiện các bước nào?",
+      "gold_doc_id": "library-account",
+      "answer_marker": "Quên mật khẩu / Quên mã PIN",
+      "metadata_filter": null,
+      "score": 2,
+      "gold_rank": 1,
+      "answer_rank": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.6840271237254225,
+          "doc_id": "library-account",
+          "chunk_index": 1,
+          "content": "# Hướng dẫn quản lý tài khoản bạn đọc\n\n1. Hướng dẫn reset mật khẩu (cho lần đầu đăng nhập hoặc quên mật khẩu)\n\n \n\nBước 1: Truy cập link: https://libopac.hust.edu.vn/\n\nBước 2: Chọn Đăng nhập (tại góc trên bên phải)\n\nBước 3: Từ giao diện đăng nhập, chọn \"Quên mật khẩu / Quên mã PIN\" \n\nBước 4: Nhập Mã số thẻ (MSCB/MSSV) -> bấm Gửi / Submit\n\nVd Mã CB: 002.035.00041\n\nHệ thống sẽ gửi một đường dẫn reset lại mật khẩu tới Email HUST (hoặc email mà bạn đã đăng ký với thư viện)\n\nBước 5: Check email và click vào đường dẫn\n\nBước 6: Nhập MSSV/MSCB, nhập 2 lần Mật khẩu mới vào các ô tương ứng và bấm Gửi / Submit  để hoàn thành việc thiết lập mật khẩu\n\n2. Đăng nhập, xem thông tin tài khoản, đổi mật khẩu\n\nB1-  Truy cập link: https://libopac.hust.edu.vn/\n\nB2-  Chọn Đăng nhập (tại góc trên bên phải) để xem thông tin tài khoản thư viện\n\nThông tin cá nhân và các giao dịch mượn tài liệu thư viện sẽ được hiển thị như sau:\n\nB3-  Để Thay đổi mật khẩu / mã PIN => chọn Thay đổi mật khẩu trong menu bên trái"
+        },
+        {
+          "rank": 2,
+          "score": 0.6506037151093194,
+          "doc_id": "library-account",
+          "chunk_index": 2,
+          "content": "# Hướng dẫn quản lý tài khoản bạn đọc\n\nNhập Mật khẩu cũ và Mật khẩu mới (2 lần), sau đó bấm Gửi để hoàn tất quá trình thay đổi mật khẩu tài khoản\n\n3. Khắc phục lỗi đăng nhập tài khoản trên trình duyệt web (Chrome/Coccoc)\n\nTrong trường hợp đăng nhập tài khoản thư viện xuất hiện thông báo lỗi dưới đây (thường xảy ra với trình duyệt Chrome)\n\nBạn đọc vui lòng thực hiện khắc phục lỗi theo các cách sau: \n\n \n\nCách 1- Đổi sang sử dụng trình duyệt web khác để đăng nhập tài khoản thư viện (ưu tiên sử dụng trình duyệt Microsoft Edge).\n\n \n\nCách 2- Xóa dữ liệu trình duyệt Chrome (Delete browsing data)\n\n- Bấm tổ hợp phím Ctrl + Shift + Delete để mở cửa sổ xóa dữ liệu trình duyệt\n\n(1) Chọn tab Advanced\n\n(2) Tích chọn tất cả các mục\n\n(3) Bấm Delete để xóa dữ liệu trình duyệt\n\n- Sau đó đóng trình duyệt web, rồi mở lại để đăng nhập tài khoản thư viện.\n\nBạn đọc tham khảo video \"Hướng dẫn sử dụng tài khoản bạn đọc thư viện\" TẠI ĐÂY\n\nLiên hệ hỗ trợ: \n\n       + Email: tvtqb@hust.edu.vn;"
+        },
+        {
+          "rank": 3,
+          "score": 0.5617150361784897,
+          "doc_id": "student-textbook-borrowing",
+          "chunk_index": 2,
+          "content": "# Quy trình mượn trả giáo trình phòng 111\n\nBước 3: Kiểm tra tài khoản trước khi ra về.\n\nMỘT SỐ LƯU Ý\n\nKhông cho người khác mượn thẻ và không sử dụng thẻ của người khác.\n\nTrang phục nghiêm túc, lịch sự, giữ gìn vệ sinh, không mang theo đồ ăn uống, giữ trật tự và tuyệt đối không hút thuốc, không sử dụng các vật dễ cháy nổ trong khu vực thư viện.\n\nBạn đọc phải có ý thức giữ gìn và bảo vệ tài sản của Thư viện ( tài liệu, máy tính…). Không được cắt, xé, viết, vẽ vào tài liệu.\n\nMáy tính tại phòng mượn giáo trình chỉ sử dụng cho việc tra cứu tìm kiếm tài liệu, không sử dụng cho các mục đích khác.\n\nBạn đọc đến mượn tài liệu để cặp, túi ở tủ gửi đồ. Không để tư trang quý trong tủ gửi đồ và tự chịu trách nhiệm với tài sản gửi trong tủ.\n\nĐiện thoại: 024 3868 0493\n\nNgôn ngữ \nTiếng Việt\n\nTóm tắt HDSD: \n\nHướng dẫn quy trình sử dụng Phòng mượn giáo trình 111 - Thư viện Tạ Quang Bửu\n\nTrung tâm Truyền thông và Tri thức số - Đại học Bách khoa Hà Nội"
+        }
+      ],
+      "unfiltered_results": []
+    },
+    {
+      "query": "Bạn đọc ngoài HUST có thể đọc toàn văn tài nguyên số không và cần điều kiện gì?",
+      "gold_doc_id": "digital-resource-faq",
+      "answer_marker": "có thể đọc toàn văn tài liệu số nếu đăng ký làm thẻ/tài khoản thư viện",
+      "metadata_filter": null,
+      "score": 2,
+      "gold_rank": 1,
+      "answer_rank": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7342179680044049,
+          "doc_id": "digital-resource-faq",
+          "chunk_index": 2,
+          "content": "# Câu hỏi thường gặp về tài nguyên số\n\n-   Bạn đọc ngoài Đại học có thể đọc toàn văn tài liệu số nếu đăng ký làm thẻ/tài khoản thư viện \n\n    Xem hướng dẫn tại QUY ĐỊNH LÀM THẺ BẠN ĐỌC\n\nCâu 5: Quyền lợi của ban đọc ngoài Đại học khi đăng nhập trang Tài nguyên số?\n\n· Tham khảo toàn văn tài liệu số trên trang web\n\n· Tham khảo toàn văn/tải về các tài liệu học liệu mở\n\nCâu 6: Các gợi ý tìm kiếm tài liệu tại trang Tài nguyên số?\n\n· Tìm kiếm tài liệu theo từ khóa bất kỳ\n\n· Tìm kiếm tài liệu theo Nhan đề, tác giả, năm xuất bản, chủ đề, Người hướng dẫn (đối với luận văn, luận án)\n\n              Xem thêm:  HƯỚNG DẪN TÌM KIẾM NHANH TÀI LIỆU SỐ \n\n \n\n \n\n \n\n \n\n \n\nNgôn ngữ \nTiếng Việt\n\nTrợ giúp\n\nHướng dẫn quản lý tài khoản bạn đọc \n\nCác câu hỏi thường gặp \n\nHướng dẫn tìm kiếm tài liệu qua OPAC \n\nHướng dẫn sử dụng trang Tài nguyên số \n\nLớp hướng dẫn sử dụng Thư viện \n\nTài liệu hướng dẫn sử dụng thư viện \n\nĐề tài nghiên cứu khoa học \n\nHướng dẫn gia hạn tài liệu \n\nTrang\n\n1\n\n2\n\n3\n\nnext ›\n\nlast »"
+        },
+        {
+          "rank": 2,
+          "score": 0.5089340002715134,
+          "doc_id": "information-on-demand",
+          "chunk_index": 1,
+          "content": "# Dịch vụ cung cấp thông tin theo yêu cầu\n\nDịch vụ đặc biệt hữu ích cho các thầy, cô và sinh viên đang làm đề tài nghiên cứu khoa học hoặc sinh viên đang làm đồ án, khóa luận tốt nghiệp trong việc tìm kiếm và khai thác sử dụng các cơ sở dữ liệu điện tử Đại học có quyền truy cập.  \n\nTrung tâm hỗ trợ việc tìm kiếm và cung cấp tài liệu dạng toàn văn hoặc dạng danh mục theo yêu cầu qua các Từ khóa, Chủ đề, Đề tài nghiên cứu nhận từ Phiếu yêu cầu.   \n\nCác CSDL được khai thác bao gồm:    \n\nSTD – Tài liệu KH&CN Việt Nam     \n\nCSDL Nhiệm vụ KH&CN Việt Nam     \n\nScienceDirect    \n\nProquest Central    \n\nIG Publishing Ebook    \n\nSAGE Premier Journal Collection   \n\nProquest Ebook Central     \n\nCác CSDL điện tử miễn phí khác: Tạp chí, sách điện tử, luận văn, luận án truy cập mở (Open Access) được bình duyệt, có uy tín và chất lượng cao.    \n\nCác thầy cô sử dụng dịch vụ điền thông tin  TẠI ĐÂY   \n\n* Lưu ý:"
+        },
+        {
+          "rank": 3,
+          "score": 0.49537126548229715,
+          "doc_id": "digital-resource-faq",
+          "chunk_index": 0,
+          "content": "# Câu hỏi thường gặp về tài nguyên số\n\nCâu hỏi thường gặp về Tài nguyên số | Thư viện\n\n×\nVideo hướng dẫn sử dụng thư viện: https://library.hust.edu.vn/node/254\n\nModule đếm lượt\n\nTài nguyên số \n\nĐại học Bách Khoa Hà Nội\n\nTừ KhóaNhan đềTác giảChủ đềKý hiệu xếp giáISBN/ISSNNgười hướng dẫnTên khóa họcKeywordAuthorJournal/Book TitleVolumeIssuePageTitleSeries TitleAuthorPublisherISBNBISAC CodeBISAC Subject HeadingLC Subject HeadingLC Call NumberDewey Decimal NumberEbook Central SubjectTất cảNhan đềTác giảNgười hướng dẫnChủ đềNăm xuất bảnAnywhereTitleAuthorKeywordsAbstractAffiliation\n\nSearch Scope\n\nMục lục thư việnThư viện sốProquest Ebook Central (Ebrary)SAGEScience Direct\n\n \n\n \n\nCâu hỏi thường gặp về Tài nguyên số\n\nCâu 1: Bạn đọc có thể truy cập trang Tài nguyên số bằng thiết bị nào?\n\n·Trả lời: Bạn đọc có thể truy cập trang Tài nguyên số bằng các thiết bị như máy tính, điện thoại, … có kết nối mạng internet\n\nCâu 2: Cách thức đăng nhập vào trang Tài nguyên số?"
+        }
+      ],
+      "unfiltered_results": []
+    }
+  ]
+}

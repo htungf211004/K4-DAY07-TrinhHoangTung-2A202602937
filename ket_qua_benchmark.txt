@@ -1,0 +1,91 @@
+KẾT QUẢ BENCHMARK - HEADING-BASED CHUNKING
+===========================================
+
+Ngày chạy: 19/09/2026
+Chiến lược: Heading-based Chunking
+Chunk size: 1000 ký tự
+Embedding provider: local
+Embedding model: paraphrase-multilingual-MiniLM-L12-v2
+Top-k: 3
+Semantic similarity hợp lệ: Có
+
+THỐNG KÊ CHUNK
+--------------
+Số tài liệu: 8
+Tổng số chunk: 30
+Độ dài nhỏ nhất: 63 ký tự
+Độ dài trung bình: 825.93 ký tự
+Độ dài lớn nhất: 996 ký tự
+Số chunk vượt giới hạn 1000: 0
+Số chunk giữ heading: 30/30
+
+Số chunk theo tài liệu:
+- digital-resource-faq: 4
+- document-renewal: 3
+- group-study-room: 4
+- information-on-demand: 4
+- library-account: 5
+- service-hours: 3
+- student-reference-book-borrowing: 3
+- student-textbook-borrowing: 4
+
+KẾT QUẢ TOP-3 CHI TIẾT
+-----------------------
+
+Q1. Với giáo trình tại phòng 111, được mượn tối đa bao nhiêu cuốn, trong bao lâu và được gia hạn thế nào?
+Metadata filter: {"audience": "student"}
+1. student-reference-book-borrowing#1 | score=0.6625 | nhiễu: chính sách phòng 102
+2. student-textbook-borrowing#0       | score=0.6408 | GOLD, chứa đáp án
+3. student-textbook-borrowing#1       | score=0.6270 | đúng tài liệu, khác phần
+Đáp án: Tối đa 8 cuốn trong 90 ngày, gia hạn một lần 30 ngày, tổng tối đa 120 ngày.
+Điểm: 1/2 (chunk đáp án ở top-2)
+
+Q2. Chính sách mượn sách tham khảo tại phòng 102 quy định số lượng, thời hạn và gia hạn như thế nào?
+Metadata filter: không
+1. student-reference-book-borrowing#1 | score=0.5996 | GOLD, chứa đáp án
+2. document-renewal#1                 | score=0.5150 | liên quan chung đến gia hạn
+3. student-textbook-borrowing#1       | score=0.5055 | chính sách giáo trình
+Đáp án: Tối đa 5 cuốn, mượn từ 1 đến 30 ngày, gia hạn một lần thêm 7 ngày.
+Điểm: 2/2
+
+Q3. Phòng học nhóm phục vụ vào thời gian nào và quy trình nhận trả chìa khóa ra sao?
+Metadata filter: không
+1. group-study-room#1 | score=0.6327 | GOLD, chứa thời gian và quy trình chìa khóa
+2. group-study-room#2 | score=0.5279 | đúng tài liệu, phần hỗ trợ
+3. group-study-room#0 | score=0.5268 | đúng tài liệu, phần mở đầu
+Đáp án: Thứ Hai-thứ Sáu 08:00-21:00, cuối tuần 08:00-16:00; đăng ký, để lại thẻ tại P411 để nhận chìa khóa, sau đó trả chìa khóa để nhận lại thẻ.
+Điểm: 2/2
+
+Q4. Khi quên mật khẩu tài khoản thư viện, bạn đọc cần thực hiện các bước nào?
+Metadata filter: không
+1. library-account#1             | score=0.6840 | GOLD, chứa các bước đặt lại mật khẩu
+2. library-account#2             | score=0.6506 | đúng tài liệu, phần liên quan
+3. student-textbook-borrowing#2  | score=0.5617 | nhiễu
+Đáp án: Truy cập libopac, chọn Đăng nhập, chọn Quên mật khẩu/Quên mã PIN, nhập mã số thẻ, mở liên kết trong email và đặt mật khẩu mới.
+Điểm: 2/2
+
+Q5. Bạn đọc ngoài HUST có thể đọc toàn văn tài nguyên số không và cần điều kiện gì?
+Metadata filter: không
+1. digital-resource-faq#2  | score=0.7342 | GOLD, chứa điều kiện đăng ký
+2. information-on-demand#1 | score=0.5089 | nhiễu
+3. digital-resource-faq#0  | score=0.4954 | đúng tài liệu, khác phần
+Đáp án: Có. Bạn đọc ngoài HUST có thể đọc toàn văn tài liệu số nếu đăng ký làm thẻ hoặc tài khoản thư viện.
+Điểm: 2/2
+
+TỔNG KẾT
+--------
+Tổng điểm: 9/10
+Số câu có chunk chứa đáp án trong top-3: 5/5
+Số câu có chunk chứa đáp án ở top-1: 4/5
+
+Failure case:
+- Q1 lấy nhầm chính sách sách tham khảo phòng 102 ở top-1 do hai tài liệu dùng từ vựng rất giống nhau về số lượng, thời hạn và gia hạn.
+- Có thể cải thiện bằng reranking theo thực thể "phòng 111" hoặc metadata category chi tiết hơn.
+
+Kiểm soát section dài:
+- Section vượt 1000 ký tự được RecursiveChunker tách tiếp.
+- Heading được gắn lại vào mọi chunk con.
+- Kiểm tra thực tế: max_length=996, over_limit=0, giữ heading=30/30.
+
+File JSON chi tiết: report/heading_benchmark_results.json
+Lệnh chạy lại: python bench.py
